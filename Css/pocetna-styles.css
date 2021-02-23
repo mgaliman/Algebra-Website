@@ -1,0 +1,40 @@
+#myVideo {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .videoContainer {
+    font-family: 'Garamond ', serif;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+  }
+  
+   .videoContainer p {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px black;
+    color: white;
+    }
+
+  .videoContainer p span.cursor {
+    background-color: white;
+    display: inline-block;
+    width: 10px;
+    margin-left: 1px;
+    animation: blink-animation 0.9s steps(5, start) infinite;
+  }
+
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+#demo2 {
+    color: red;
+ }

@@ -1,0 +1,53 @@
+.novostiText p {
+    font-family: 'Bitter', serif;
+    text-align: left;
+    font-size: 30px;
+    padding: 70px 300px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+  
+.content>.picture {
+    background-image: url("/image/novost3.jpg");
+    background-size: cover;
+    position: static;
+    padding: 10% 4%;
+  }
+  
+.headline {
+    padding-top: 3%;
+  }
+  
+.picture h1 {
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+
+.footer {
+    position: static;
+    margin-bottom: -5px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+  
+.footer h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer h2{
+    color: darkred;
+    font-size: 50px;
+    padding-top: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+}
+
+.image-footer
+{
+    margin-bottom: -300px;
+}

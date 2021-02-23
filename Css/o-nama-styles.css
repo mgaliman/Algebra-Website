@@ -1,0 +1,197 @@
+/* Right navigation configuration */
+.right-side {
+    top: 35px;
+    right: 0;
+    position: fixed; 
+    animation: rightNavAnimation 2s;
+}
+
+.right-side a{
+    color: rgb(219, 170, 7);
+}
+
+@keyframes rightNavAnimation {
+    0%{
+        margin-right: -220%;
+    }
+    50%{
+    }
+    100% {
+        margin-left: 0%;
+    }
+  }
+
+.content {
+    font-family: 'Bitter', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: static;
+}
+
+.content>.picture img {
+    margin-top: -20%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.picture {
+    animation-name: pictureAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.headline {
+    margin: 0 20%;
+    padding-bottom: 10px;
+    border-bottom: rgb(240, 198, 11) 3px ridge;
+}
+
+p {
+    padding: 0 15%;
+}
+
+.column {
+    padding: 5% 5%;
+    border: rgb(107, 106, 106) 1px solid;    
+}
+
+.column p {
+    padding: 5% 5%;
+    border-top: gray 1px solid;
+    text-align: justify;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.column h2 {
+    display: inline;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+.column2 h3 {
+    font-size: 1em;
+    border-bottom: gray 1px solid;
+}
+
+.year {
+    color: rgb(15, 79, 175);
+}
+
+.fancyText {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 2em;
+    padding: 3% 0;
+    margin-bottom: 1.5%;
+    background-color: rgb(240, 240, 240);
+    text-align: left;
+}
+
+.columns {
+    animation: fadein 3s;
+}
+
+.columns h1 {
+    padding: 2%;
+    padding-top: 120px;
+    margin-top: -90px;
+    color: crimson;
+    text-shadow: 1px 1px black;
+}
+
+.section {
+    padding: 0 10%;
+    display: grid;
+    grid-gap: .5% .10%;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.section2 {
+    padding: 0 13%;
+    padding-bottom: 3%;
+    display: grid;
+    grid-gap: 20px;
+    grid-column-gap: 20px;
+    text-transform: uppercase;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.section3 {
+    padding: 3% 20%;
+    padding-bottom: 7%;
+    display: grid;
+    grid-gap: 4% 2%;
+    grid-template-columns: 50% 50%;
+    background-image: linear-gradient(to bottom, white 0%, rgba(248, 246, 246, 0.432) 100%), url("/image/kakoDoNas.jpg");
+    background-attachment: fixed;
+    background-repeat: round;
+}
+
+.h1{
+    font-size: 60px;
+}
+
+.h3 {
+    text-align: left;
+    font-size: 1em;
+    border-bottom: gray 1px solid;
+}
+
+.column3 {
+    background-color: white;
+    text-align: left;
+    padding: 20px 10px;
+    border: gray 1px solid;
+}
+
+.column3 p {
+    text-align: left;
+}
+
+.column3 i {
+    color: rgb(0, 102, 255);
+}
+
+.column3 h2 {
+    font-weight: bold;
+}
+
+.footer h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 200px;
+
+}
+
+.footer h2{
+    color: darkred;
+    font-size: 50px;
+    padding-top: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.image-footer
+{
+    margin-bottom: -300px;
+}
+
+@keyframes pictureAnimation {
+    0%{
+        margin-top: -30%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
+@media all and (max-width: 768px){
+    .right-side{
+        display: none;
+    }
+}

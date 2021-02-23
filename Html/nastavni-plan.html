@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nastavni plan</title>
+        <meta name="author" content="Marko Galiman">
+        <link rel="stylesheet" href="/Css/styles.css">
+        <link rel="stylesheet" href="/Css/kontakt-styles.css">
+        <link rel="stylesheet" href="/Css/nastavni-plan-styles.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/c498e34432.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="76x76" href="/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="/Favicon/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+<body>
+
+    <div class="nav-bar">
+        <div class="left-side">
+            <a href="pocetna.html"><img src="/image/Algebra-logo.png" width="50 px" id="Logo"></a>            
+            <a href="pocetna.html"><i class="fas fa-home"></i> Početna</a>
+            <a href="o-nama.html"><i class="fas fa-comments"></i> O nama</a>
+            <a href="novosti.html"><i class="fas fa-info-circle"></i> Novosti</a>
+            <a href="nastavni-plan.html"><i class="fas fa-thumbtack"></i> Nastavni plan</a>
+            <a href="#contactpopup"><i class="far fa-envelope"></i> Kontakt</a>
+        </div>
+    </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+
+    <div id="contactpopup" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content-contact">
+                <form id="contact" action="mailto:http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" enctype=”multipart/form-data”>
+                    <h3><i class="fas fa-envelope"></i> Kontaktirajte nas</h3><br/>
+                    <fieldset>
+                      <input placeholder="Puno ime" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                      <input placeholder="E-mail" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="importance">Važnost poruke:</label>
+                        <select id="importance" name="importance">
+                          <option value="high">Visoka</option>
+                          <option value="low">Niska</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Unesite poruku ovdje...." tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <name="newsletter">Primaj newsletter <input type="checkbox" checked="checked">
+                    </fieldset> 
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <h1 class="headline">Nastavni plan</h1>
+    
+    <div class="row">
+        <div class="column left">
+            <form>
+                <div class="input-row">               
+                    <Label for = "nazivKolegija"><h2>Naziv kolegija:</h2></Label>
+                    <input type="text" id="search" class="form-control form-control-lg"
+                    autocomplete="off" placeholder="Započnite unos naziva kolegija...">
+                    <button class="add-row">Submit</button>
+                </div>
+                <div id="match-list" class="match-list-style"></div>
+            </form>
+        </div>
+        <div class="column right">
+        <table id = "taSubject">
+            <thead>
+                <tr>
+                    <th width = "50%">Kolegij</th>
+                    <th width = "10%">ECTS</th>
+                    <th width = "10%">Sati</th>
+                    <th width = "5%">P</th>
+                    <th width = "5%">V</th>
+                    <th width = "10%">Tip</th>
+                    <th width = "10%"></th>
+                </tr>
+            </thead>
+            <tbody id="tbSubject">
+                <tr>
+                    <td>Testni kolegij1</td><td>5</td><td>60</td><td>2</td><td>2</td><td>Obavezni</td>
+                    <td><button class="delete-row" >Obriši</button></td>
+                </tr>
+                <tr>
+                    <td>Testni kolegij2</td><td>5</td><td>60</td><td>2</td><td>2</td><td>Obavezni</td>
+                    <td><button class="delete-row" >Obriši</button></td>
+                </tr>
+                <tr>
+                    <td>Testni kolegij3</td><td>5</td><td>60</td><td>2</td><td>2</td><td>Obavezni</td>
+                    <td><button class="delete-row" >Obriši</button></td>
+                </tr>
+                <tr>
+                    <td>Testni kolegij4</td><td>5</td><td>60</td><td>2</td><td>2</td><td>Obavezni</td>
+                    <td><button class="delete-row" >Obriši</button></td>
+                </tr>
+                <tr>
+                    <td>Testni kolegij5</td><td>5</td><td>60</td><td>2</td><td>2</td><td>Obavezni</td>
+                    <td><button class="delete-row" >Obriši</button></td>
+                </tr>
+                <tr>
+                    <td>Testni kolegij6</td><td>5</td><td>60</td><td>2</td><td>2</td><td>Obavezni</td>
+                    <td><button class="delete-row">Obriši</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="image-footer"><img src="/image/zaiskri-bg.jpg" width="100%" height="500px" id="footer-image"></div>
+    <h1>Budi izvrstan u onom što voliš</h1>
+    <h2>Zaiskri</h2>
+</div>
+
+
+<script src="/JS/nastavni-plan.js"></script>
+<script src="/JS/hamburger.js"></script>
+</body>
+</html>
