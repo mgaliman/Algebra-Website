@@ -18,6 +18,7 @@
     showSlides(slideIndex = n);
   }
   
+  // Shows slides
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
